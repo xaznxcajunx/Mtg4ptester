@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mtg Priority Mulligan</title>
+</head>
+<body>
+    <header>
+        <h1>Mtg Priority Mulligan</h1>
+        <nav>
+            <button id="importDeckBtn">Import Deck</button>
+            <button id="exportDeckBtn">Export Deck</button>
+            <button id="validateDeckBtn">Validate Deck</button>
+        </nav>
+    </header>
+    <main>
+        <section id="deckManagement">
+            <h2>Deck Management</h2>
+            <div>
+                <input type="file" id="deckFile" accept="application/json">
+                <input type="text" id="deckSearch" placeholder="Search cards...">
+                <button id="filterDeckBtn">Filter</button>
+            </div>
+        </section>
+        <section id="cardDisplay">
+            <h2>Card Display</h2>
+            <ul id="cardList">
+                <!-- Cards will be displayed here -->
+            </ul>
+        </section>
+        <section id="deckStatistics">
+            <h2>Deck Statistics</h2>
+            <p id="statistics">Statistics will be shown here.</p>
+        </section>
+        <section id="settingsPanel">
+            <h2>Settings</h2>
+            <div>
+                <label for="localStorage">Use Local Storage:</label>
+                <input type="checkbox" id="localStorage">
+                <label for="firebase">Use Firebase:</label>
+                <input type="checkbox" id="firebase">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 mtg_priority_mulligan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
